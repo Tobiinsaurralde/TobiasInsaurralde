@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tobias Insaurralde</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/47d42bace7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Desarrollador de software</p>
+            <img src="assets/images/pc.png" class="logo hide-on-mobile" style="margin-left: 750px">
+
+                <h1>Hola, Soy <span>Tobias</span><br>Insaurralde </h1>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ----------------about------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/tobias.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre mí</h1>
+                    <p>Soy un apasionado Desarrollador Web graduado de Henry🎓.
+                        Siempre estoy ansioso por comprender el porqué detrás de cada 
+                        aspecto tecnológico, y cualquier desafío es una oportunidad para aprender
+                         y mejorar. Mi adaptabilidad a nuevas tecnologías, como JavaScript, React, HTML,
+                          CSS, Redux, Express, Node, PostgreSQL y Sequelize, me permite abordar proyectos 
+                          con confianza y creatividad.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
+                        <p class="tab-links" onclick="opentab('education')">Educacion</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <!-- skills -->
+                        <div class="social-icons">
+                            <a><i class="fa-brands fa-react"></i></a>
+                            <a><i class="fa-brands fa-node"></i></a>
+                            <a><i class="fa-solid fa-database"></i></a>
+                            <a><i class="fa-brands fa-js"></i></a>
+                            <a><i class="fa-brands fa-html5"></i></a>
+                            <a><i class="fa-brands fa-css3-alt"></i></a>
+                            <a><i class="fa-brands fa-linux"></i></a>
+                            <a><i class="fa-brands fa-java"></i></a>
+                            <a><i class="fa-brands fa-git"></i></a>
+                            <a><i class="fa-brands fa-wordpress"></i></a>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                         <!-- Experience -->
+                        <ul>
+                            <li><span>Desarrollador Frontend</span><br>Especializado en proyectos de desarrollo web con JavaScript, React, HTML, CSS, Redux , etc. Diseño y desarrollo temas personalizados,
+                                 e integro diversas funcionalidades para satisfacer las necesidades de clientes y usuarios.</li>
+                            <li><span>Desarrollador Full Stack</span><br><li><br>Con experiencia en proyectos de desarrollo web utilizando tecnologías como JavaScript, React, HTML, CSS, Redux, Sequelize, PostgreSQL, Node y Express. Diseño y desarrollo aplicaciones completas, e integro funcionalidades tanto en el frontend como en el backend para asegurar soluciones sólidas y escalables que satisfacen las necesidades de clientes y usuarios.</li>
+                        </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                         <!-- education -->
+                        <ul>
+                            <li><span>Full Stack Web Developer</span><br>Bootcamp Henry . 800 horas de cursos teórico-prácticos</li>
+                            <li><span>Autodidácta</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--  -----------------services------------------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Mis servicios</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full Stack Developer</h2>
+                    <p>Como desarrollador Full Stack, combino habilidades de frontend y backend para crear soluciones web completas y eficientes. Tengo experiencia en tecnologías como JavaScript, Next, React, Redux, HTML, CSS, Tailwind CSS para el frontend y Node.js, Express, PostgreSQL y Sequelize para el backend. También manejo Git y GitFlow para un control de versiones eficiente. Mi enfoque de un extremo a otro garantiza que cada proyecto sea cohesivo, sólido y escalable..</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-commit"></i>
+                    <h2>Frontend Developer</h2>
+                    <p>Ofrezco servicios de desarrollo frontend con sólida experiencia en JavaScript, Next, React, Redux, React Redux, HTML, CSS y Tailwind CSS. Mi enfoque en el diseño responsivo garantiza que las interfaces sean atractivas y funcionales en todos los dispositivos. Mi pasión por el diseño y la experiencia de usuario me impulsa a crear interfaces intuitivas y visualmente atractivas.</p>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------portfolio----------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mi trabajo</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/images/pinkpanther-photo.png">
+                    <div class="layer">
+                        <h3> Deliveloz Ecommerce</h3>
+                        <p>Aplicación que busca satisfacer las necesidades de los clientes a la hora de hacer un pedido de comida con un tiempo récord. En ella podremos dar un vistazo a todo el catálogo de comidas y hacer el pedido.
+                            Incluye: registro, ingreso con autenticación de terceros, comprar productos, filtrados y dashboard de administrado
+                            <br>
+                            Stack: Vite, React, Redux, React-Redux, Tailwind Css, Cloudinary, JavaScript, Node, Express, Firebase, Mercado
+                            Pago PRO, NodeMailer, PostgreSQL and Sequelize.</p>
+                        <a href="https://github.com/Tobiinsaurralde/DeliVeloz" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/movieapp-photo.png">
+                    <div class="layer">
+                        <h3>Kinetiago App</h3>
+                        <p> Página de asesorías online. La página cuenta con un diseño combinado, está diseñada específicamente para entrenadores personales, con secciones dedicadas a servicios, reservas y consultas y cuenta con un diseño responsivo.
+                            También facilita la conexión con los clientes a través de las redes sociales y enlaces de contacto rápido (botones integrados para WhatsApp y reservas de videollamadas en Calendly)
+                            <br>
+                            <br>
+                            Stack: JavaScript, HTML, React, TailwindCSS.</p>
+                        <a href="https://github.com/Tobiinsaurralde/KINE-TIAGO" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/drivers-photo.png">
+                    <div class="layer">
+                        <h3>Pokedex</h3>
+                        <p>Desarrollé una aplicación tipo Pokédex que permite a los usuarios explorar información detallada sobre diferentes
+                            Pokémon. La aplicación presenta un diseño responsivo y cuenta con las funcionalidades de búsqueda por nombre y tipo de Pokémon, visualización detallada de cada Pokémon, 
+                            y Creación de Pokémon personalizados por parte de los usuarios, añadiendo una característica distintiva a la
+                            aplicación
+                            <br>
+                            <br>
+                            Stack: Vite, HTML, CSS, React, Redux, React-Redux, Node, JavaScript, Express, PostgreSQL and Sequelize.</p>
+                        <a href="https://github.com/Tobiinsaurralde/PI-POKEMON" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+              
+                </div>
+            </div>
+            <a href="https://github.com/Tobiinsaurralde?tab=repositories" target="_blank" class="btn">Ver más</a>
+        </div>
+    </div>
+    <!-- ------------------------contact---------------------------------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contáctame</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>tinsaurralde17@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+543794638635</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/tobias-insaurralde-229168297/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Tobiinsaurralde" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                   
+                </div>
+                <div class="contact-right">
+                    <!-- <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span> -->
+                    <a href="docs/Tobiasinsaurralde.pdf" target="_blank" class="btn btn2">Ver CV</a>
+
+
+
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx4FufIoaCWaMlSZUUjiEnIzeRaJgvgbw3OZ-eZLYRi1ZFRvtcnsRx5QthpqoMe6vKCMQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => response.json()) 
+      .then(responseJson => {
+        if (responseJson.result === 'success') {
+          form.reset();
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(() => {
+            msg.innerHTML = "";
+          }, 2000);
+        } else {
+          msg.innerHTML = "Failed to send message";
+          console.error('Error:', responseJson.error);
+        }
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        msg.innerHTML = "Failed to send message";
+      });
+  });
+    </script>
+</body>
+</html>
